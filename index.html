@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.webp">
+
+    <!-- Estilos CSS y Scripts -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Centro de Monitoreo</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column p-3">
+        <h1>Monitoreo de camaras</h1>
+        <h2><span><u>Usuario:</u></span> Iara Bruni Lopez</h2>
+        <div class="row">
+            <div id="1" class="col-lg-4 video-container border">
+                <div class="camera-overlay">
+                    <h3>Camara 1</h3>
+                    <div class="boton-rojo Blink"></div>
+                </div>
+                <video id="video-1" class="video-position" autoplay muted >
+                    <source src="assets/camara1.mp4" type="video/mp4">
+                    No funciona la reproduccion en este navegador. Por favor cambie a otro.
+                </video>
+            </div>
+            <div id="2" class="col-lg-4 video-container border">
+                <div class="camera-overlay">
+                    <h3>Camara 2</h3>
+                    <div class="boton-rojo Blink"></div>
+                </div>
+                <video id="video-2" class="video-position" autoplay muted>
+                    <source src="assets/camara2.mp4" type="video/mp4">
+                    No funciona la reproduccion en este navegador. Por favor cambie a otro.
+                </video>
+            </div>
+            <div id="3" class="col-lg-4 video-container border">
+                <div class="camera-overlay">
+                    <h3>Camara 3</h3>
+                    <div class="boton-rojo Blink"></div>
+                </div>
+                <video id="video-3" autoplay muted>
+                    <source src="assets/camara3.mp4" type="video/mp4">
+                    No funciona la reproduccion en este navegador. Por favor cambie a otro.
+                </video>
+            </div>
+        </div>
+    </div>
+    <script>
+        inicializar();
+    </script>
+</body>
+
+</html>

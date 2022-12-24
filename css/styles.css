@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 3rem !important;
+}
+
+* {
+    font-family: 'Wallpoet', sans-serif;
+    color: aliceblue;
+}
+
+
+.video-container {
+    padding: 0 !important;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+}
+
+.video-container video{
+    width: 100%;
+}
+
+.video-position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.boton-rojo {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.camera-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+}
+
+.camera-overlay h3 {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.487);
+    border-radius: 10px;
+    opacity: 0.70;
+    padding: 5px;
+    margin: 5px;
+}
+
+.fixed-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.Blink {
+    animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.img-nosignal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1000;
+}
