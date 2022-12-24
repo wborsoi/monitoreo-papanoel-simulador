@@ -130,7 +130,7 @@ function changeVideo3() {
 }
 
 function getRandomNumber(params) {
-    const min = 2 * 1000;
-    const max = 5 * 1000;
+    const min = 3 * 1000;
+    const max = 10 * 1000;
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
